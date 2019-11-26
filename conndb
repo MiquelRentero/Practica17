@@ -33,7 +33,7 @@ while getopts ":u:h:p:t" o; do
 			else
 				puerto=${OPTARG}
 			fi
-			;;	
+			;;
 		t)
 			echo "comprovando conexion"
 			;;
