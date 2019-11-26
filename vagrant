@@ -1,2 +1,36 @@
 #!/bin/bash
 #https://github.com/MiquelRentero/Practica17.git
+#ASO, Practica 17
+#Documento para instalacion de Vagrant en nuestro Sistema
+
+#Creacion de carpeta en la que alojaremos Vagrant
+mkdir -p vagrant
+#Entramos en la carpeta
+cd vagrant
+#Creacion del fichero de configuracion de Vagrant
+vagrant init
+#Entramos en el fichero de configuracion de Vagrant
+Vagrant.configure("2") do |config|
+#Selecionamos nuestra version de nuestra maquina
+	config.vm.box = "ubuntu/xenial64"
+#Indiquem quin sera l'hipervisor
+	config.vm.provider "virtualbox" do |vb|
+#Procedemos a activar la GUI
+	vb.gui = true
+#Introducimos un nombre a la maquina
+	vb.name = "Prac17"
+#Seleccionamos la cantidad de RAM
+	vb.memory = "2048"
+#Indicamos el numero de CPU's
+	vb.cpus = 2
+#Introducimos el name de la machine
+	config.vm.hostname = "LAMP"
+#La network sera privada y tendremos direccion IP de forma dinamica
+	config.vm.network "private_network", type: "dhcp"
+end
+#Reseteamos Vagrant
+vagrant reload
+#Levantamos vagrant
+vagrant up
+#Comprovamos el estado de vagrant
+vagrant status
