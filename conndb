@@ -1,0 +1,57 @@
+#!/bin/bash
+#https://github.com/MiquelRentero/Practica17.git
+
+nomscript=$0   # $0 es el nom del programa
+function usage () {
+   cat <<EOF
+Usage: nomscript [-u usuari] [-h hostname] [-p port] [-t]
+   -u   usuari de la base de dades (obligatori)
+   -h   hostname on es connectarà (obligatori)
+   -p   port (no obligatori ja que per defecte és 3306, però si existeix ha de ser un numero superior a 1024 i inferior o igual a 65535)
+   -t   no es connecta,  només comprova connexió
+EOF
+exit 1
+}
+
+
+while getopts ":u:h:p:t" o; do
+    case "${o}" in
+        u)
+            user=${OPTARG}
+            ;;
+        h)
+            host=${OPTARG}
+            ;;
+        p)
+			p=${OPTARG}
+			if [ -z ${OPTARG} ]
+			then
+				puerto=3306
+			elif [ ${OPTARG} -le 1024 ] || [ ${OPTARG} -gt 65535 ]
+			then
+				echo "puerto no disponible"
+			else
+				puerto=${OPTARG}
+			fi
+			;;	
+		t)
+			echo "comprovando conexion"
+			;;
+        *)
+            echo "pendejo"
+            usage
+            ;;
+    esac
+done
+shift $((OPTIND-1))
+
+if [ -z "${user}" ] || [ -z "${host}" ]; then
+    usage
+
+fi
+if [ -e "${t}" ]
+then
+  echo "Comprovant conexio"
+fi
+
+
