@@ -3,6 +3,7 @@
 #ASO, Practica 17
 #Documento para instalacion de Vagrant en nuestro Sistema
 
+
 #Creacion de carpeta en la que alojaremos Vagrant
 mkdir -p vagrant
 #Entramos en la carpeta
