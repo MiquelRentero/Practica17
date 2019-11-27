@@ -8,14 +8,17 @@ Per controlar la base de dades instal·larem l’aplicació adminer.
 La segona part es un script per comprovar que executem de la manera correcte un programa amb els parametres que son obligatoris
 i utilitzats de manera correcte.
 
-## 
+## Les practiques 
+# Aquestes son els links a les dues practiques realitzades.
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Vagrant: https://github.com/MiquelRentero/Practica17/blob/master/vagrant
+Conndb: https://github.com/MiquelRentero/Practica17/blob/master/conndb
 
-### Prerequisites
 
-What things you need to install the software and how to install them
+### Prerequisits
+
+Important tenir isntal·lat virtualvox 
 
 ```
-Give examples
+sudo apt-get install virtualbox 
 ```
