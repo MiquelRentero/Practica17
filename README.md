@@ -18,7 +18,7 @@ Conndb: https://github.com/MiquelRentero/Practica17/blob/master/conndb
 
 ### Prerequisits
 
-Important tenir isntal·lat virtualvox 
+Important tenir instal·lat virtualbox 
 
 ```
 sudo apt-get install virtualbox 
