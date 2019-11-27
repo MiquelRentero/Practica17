@@ -12,6 +12,7 @@ i utilitzats de manera correcte.
 ### Aquestes son els links a les dues practiques realitzades.
 
 Vagrant: https://github.com/MiquelRentero/Practica17/blob/master/vagrant
+
 Conndb: https://github.com/MiquelRentero/Practica17/blob/master/conndb
 
 
