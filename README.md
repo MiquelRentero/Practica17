@@ -1,5 +1,5 @@
 # Practica17
-
+ 
 Aquesta pràctica es divideix en dues parts, en la primera dirigida per a vagrant.
 En aquesta pràctica farem servir Vagrant per automatitzar la creació d’una màquina virtual en VirtualBox 
 amb la darrera versió d’Ubuntu Server, amb 2GB de memòria, es realitzarà
