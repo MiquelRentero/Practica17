@@ -9,7 +9,7 @@ La segona part es un script per comprovar que executem de la manera correcte un 
 i utilitzats de manera correcte.
 
 ## Les practiques 
-# Aquestes son els links a les dues practiques realitzades.
+### Aquestes son els links a les dues practiques realitzades.
 
 Vagrant: https://github.com/MiquelRentero/Practica17/blob/master/vagrant
 Conndb: https://github.com/MiquelRentero/Practica17/blob/master/conndb
